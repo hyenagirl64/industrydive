@@ -27,7 +27,7 @@ localhost:8000/articles/
 There are three pages: the index page, which is the one at that url, the create page and detail pages for each article.  All are navigable via links from the index page, although the detail pages won't be viewable until articles have been created.
 
 ## System Design
-In this repository is an image representing a first draft of a potential cloud based system design for this application, once productionized.
+In this repository is an image representing a first draft of a potential cloud based system design for this application, once productionized.  This a chart of this is in the image file "Industry Dive Interview System Design Chart.png" in the root directory of this project.
 
 There are two major components, the Application layer and the storage layer.  Each should have a load balancer which will accept incoming requests and route them between different server nodes in the cloud.  As traffic scaled up, new nodes would be booted up to meet the demand.
 
