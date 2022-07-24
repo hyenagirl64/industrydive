@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Articles</title>
+    </head>
+    <body>
+        {% if article %}
+            <div>
+                <h1>{{ article.title }}</h1>
+                <h4><i>by {{ article.author }}</i></h4>
+            </div>
+            <div>
+                <p>{{ article.body_text}}</p>
+            </div>
+        {% else %}
+            <p>Article not found.</p>
+        {% endif %}
+        <div>
+            <a href="{% url 'articles:index' %}">Back to List</a>
+        </div>
+    </body>
+</html>
